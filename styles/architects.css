@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font {
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Shared styles */
+.disply-flex{
+    display: flex;
+}
+/* Dark01 */
+.text-black{
+    color: #131313;
+}
+/* Dark02 */
+.text-gray{
+    color: #424242;
+}
+/* Dark03 */
+.text-light-gray{
+    color: #727272;
+}
+/* primary button */
+.btn-primary{
+    background-color: #FF900E;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: white;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+/* backgraound */
+.bg-light{
+    background-color: #FF900E1A;
+}
+
+
+/* Header styles */
+
+
+/* Nav bar styles */
+.nav-bar, .banner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.nav-bar{
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+.brand{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 50px;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+}
+/* Banner section styles */
+.banner-content{
+    max-width: 855px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+}
+.banner-discription{
+    font-size: 1rem;
+    margin: 32px 0;
+}
+.banner-image{
+    width: 100%;
+}
+
+/* Responsive media query */
+@media screen and (max-width: 576px) {
+    .nav-bar, .nav-links {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+}
