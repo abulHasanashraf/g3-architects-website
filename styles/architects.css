@@ -51,6 +51,10 @@ main {
     max-width: 1440px;
     margin: 0 auto;
 }
+footer{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 .section-title{
     font-size: 2.8rem;
     font-weight: 700;
@@ -127,6 +131,52 @@ main {
     font-size: 1rem;
     margin: 24px 0 32px 0;
 }
+/* Features you will love & enjoy */
+
+.love-and-enjoy{
+    display: flex;
+    gap: 140px;
+}
+.love-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 30px;
+    margin-bottom: 24px;
+}
+.love-discription{
+    margin-bottom: 30px;
+}
+.features-card-container{
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.card-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+.featured-architect img{
+    width: 100%;
+}
+
+#experience-badge{
+    padding: 46px 42px;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+#Experience{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
 
 
 /* Some facts styles */
@@ -182,6 +232,17 @@ main {
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
 }
+/* footer section style */
+.copyright{
+    padding: 40px 40px;
+    text-align: center;
+    background-color: #FFF4E7;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
 
 
 /* Responsive media query */
@@ -213,16 +274,28 @@ main {
     .sponspores-companies{
         gap: 50px;
     }
+    .love-and-enjoy{
+        flex-direction: column;
+    }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
 
 /* Medium device style  */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .teams{
+    .teams, 
+    .love-and-enjoy{
         flex-direction: column;
 
     }
     .features-container{
         margin: 50px auto;
+    }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
     }
     .sponspores-companies,
     .fact-container{
