@@ -15,6 +15,9 @@
 .disply-flex{
     display: flex;
 }
+.text-highlight{
+    color: #FF900E;
+}
 /* Dark01 */
 .text-black{
     color: #131313;
@@ -40,6 +43,14 @@
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
+}
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
 }
 
 /* backgraound */
@@ -91,12 +102,53 @@
 .banner-image{
     width: 100%;
 }
+/* teamds and features style */
+.teams{
+    margin-top: 85px;
+    align-items: center;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.features-container{
+    margin-left: 130px;
+    max-width: 540px;
+}
+
+#quick-list{
+    font-weight: 500;
+}
+.features-discription{
+    font-size: 1rem;
+    margin: 24px 0 32px 0;
+}
 
 /* Responsive media query */
 @media screen and (max-width: 576px) {
-    .nav-bar, .nav-links {
+    .nav-bar, 
+    .nav-links,
+    .teams {
         flex-direction: column;
         gap: 30px;
         text-align: center;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .features-container{
+        margin-left: 10px;
+    }
+}
+
+/* Medium device style  */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .teams{
+        flex-direction: column;
+
+    }
+    .features-container{
+        margin: 50px auto;
     }
 }
